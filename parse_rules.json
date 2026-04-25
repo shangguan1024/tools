@@ -1,0 +1,29 @@
+{
+  "comment": "日志解析规则配置",
+  "description": "定义layer和item日志的解析格式，支持多帧动画",
+  "rules": {
+    "layerPrefix": "layer：",
+    "itemPrefix": "item:",
+    "itemBelongsToPreviousLayer": true,
+    "framePrefix": "frame_num:",
+    "dumpLayerMarker": "dump layer:"
+  },
+  "layer": {
+    "fields": ["id", "x1", "y1", "x2", "y2"],
+    "parse": "key-value"
+  },
+  "item": {
+    "fields": ["name", "x1", "y1", "x2", "y2"],
+    "parse": "key-value"
+  },
+  "animation": {
+    "defaultPlaySpeed": 500,
+    "minPlaySpeed": 100,
+    "maxPlaySpeed": 2000
+  },
+  "examples": {
+    "layer": "layer：id 1 x 10.0 y 10.0 x 20.0 y 20.0",
+    "item": "item: name image x 15.0 y 15.0 x 20.0 y 20.0",
+    "frame": "frame_num: 1"
+  }
+}
