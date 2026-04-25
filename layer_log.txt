@@ -1,3 +1,5 @@
 dump layer:
 layer：id 1 x 10.0 y 10.0 x 20.0 y 20.0
+item: name image x 15.0 y 15.0 x 20.0 y 20.0
 layer：id 2 x 20.0 y 20.0 x 40.0 y 40.0
+item: name image x 25.0 y 25.0 x 30.0 y 30.0
